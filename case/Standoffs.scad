@@ -21,22 +21,15 @@ thread_size = "M3x0.5"; //  thread.
 specs = thread_specs(str(thread_size, "-ext"));
 pitch = specs[0];
 turns = thread_h/pitch - 1; // 
+corr=0.5;//correction
 
-//standoff();
+
+//these versions are scaled for better fit with the M3s
+standoff();
 module standoff(){
       difference(){
                 //internal cylinder space
-               cylinder(h=thread_h, r=stand_r, $fn=6, center =true);
-          tap(thread_size, turns=turns);
-
-            }}
-
-//these versions are scaled for better fit with the M3s
-standoff_scaled();
-module standoff_scaled(){
-      difference(){
-                //internal cylinder space
-                 color("grey") cylinder(h=thread_h, r=stand_r, $fn=6, center =true);
-          scale([1.05,1.05,1]) tap(thread_size, turns=turns);
+                 color("grey") cylinder(h=thread_h, r=stand_r, $fn=6, center =false);
+          %scale([1.2,1.2,1]) tap(thread_size, turns=turns+corr);
 
             }}              
