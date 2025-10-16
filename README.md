@@ -1,4 +1,5 @@
 ![Cover](photos/600ppi/cover.png)
+![Cover](photos/trans.jpg)
 
 [Documento abierto en español para desarrolladores/usuarios locales](https://docs.google.com/document/d/1cQqQuTMz90V9P6JI4kd7ICyAgC--2xT0W8RxrzRctD8/edit?usp=sharing). (Comentarios bienvenidos en el doc)
 
