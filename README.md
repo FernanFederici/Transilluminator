@@ -1,5 +1,7 @@
 ![Cover](photos/600ppi/cover.png)
 
+[Documento abierto en español para desarrolladores/usuarios locales]([https://jlcpcb.com/parts](https://docs.google.com/document/d/1cQqQuTMz90V9P6JI4kd7ICyAgC--2xT0W8RxrzRctD8/edit?usp=sharing)).
+
 # Blue Transilluminator
 
 ## Description
