@@ -35,7 +35,7 @@ specs = thread_specs(str(thread_size, "-ext"));
 pitch = specs[0];
 
 
-thread_h = standoff_type[1];// define here the standoff type 0=19,05 and 1=9,5
+thread_h = standoff_type[0];// define here the standoff type 0=19,05 and 1=9,5
 turns = thread_h/pitch - 1; // 
 
 
@@ -45,7 +45,8 @@ module standoff(){
       difference(){
                 //internal cylinder space
                  color("grey") cylinder(h=thread_h, r=stand_r*1.3, $fn=6, center =false);
-          scale([1.3,1.3,1]) tap(thread_size, turns=turns+corr*10);
+          scale([1.2,1.2,1]) tap(thread_size, turns=turns+corr*100);
+          //1.3 it is a lot
 
             }}              
             
